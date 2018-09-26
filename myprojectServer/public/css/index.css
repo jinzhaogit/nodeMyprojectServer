@@ -1,0 +1,850 @@
+/* 头部导航栏 */
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    z-index: 300;
+}
+.top-menu{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 30px;
+}
+.top-menu>img:first-child{
+    float: left;
+    padding: 4px 50px 0 0;
+}
+.top-menu>img:last-child{
+    float: left;
+    padding: 6px 0 0 60px;
+}
+.top-menu>a{
+    float: left;
+    color: #333;
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 30px;
+}
+.top-menu>a:nth-child(5){
+    color: #f1413d;
+}
+.top-menu>a:hover{
+    color: #f1413d;
+}
+.top-menu>a:nth-last-child(2)>img{
+    padding-bottom: 4px;
+}
+.downDiv{
+    display: none;
+    height: 88px;
+    width: 40px;
+    background: rgba(100,10,50,.6);
+    position: absolute;
+    top: 40px;
+    right: 170px;
+    text-align:center;
+}
+.downDiv>ul>li{
+    line-height: 27px;
+}
+.downDiv>ul>li:hover{
+    border-bottom: 2px solid #99164a;
+}
+.downDiv>ul>li>a{
+    color:rgba(255,255,255,.7);
+}
+/* 第一区 */
+#zoom{
+    position: relative;
+}
+#zoom>.plo{
+    position: relative;
+    padding-top: 50px;
+}
+#zoom>.plo>.plo-kv{
+    width: 100%;
+}
+#zoom>.plo>.ztitle{
+    position: absolute;
+    top: 15%;
+    left: 26%;
+}
+#zoom>.plo>.sport-logo{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+#zoom>.plo>.fun-logo{
+    position: absolute;
+    bottom: 10%;
+    right: 9%;
+}
+/* 悬浮窗口 */
+#zoom>.slide{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 200px;
+}
+.slide>.price{
+    height: 100px;
+    padding: 24px 0 16px 17px;
+    color: #fff; 
+}
+.slide>.price span{
+    font-size: 14px;
+}
+.slide>.price h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.slide>img{
+    padding-left: 20px;
+}
+.slide>ul{
+    padding-top: 20px;
+}
+.slide>ul>li{
+    height: 40px;
+    padding-left: 20px;
+}
+.slide>ul>li>a{
+    color: #ddd;
+    font-size: 14px;
+}
+.tvc{
+    height: 72px;
+    width: 200px;
+    overflow: hidden;
+}
+.tvc>.tvc-bg{
+    background-image: url("../img/index/video_bg.jpg");
+    transition: all .5s linear;
+}
+.tvc>.tvc-bg>.video{
+    display: inline-block;
+    padding-left: 50px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.tvc>.tvc-bg>.video>img{
+    transition: all .5s linear;    
+}
+.tvc>.tvc-bg>img{
+    padding-bottom: 10px;
+}
+.tvc:hover .tvc-bg{
+    transform: scale(1.1);
+}
+.tvc:hover .video>img{
+    transform: scale(.8);
+}
+/* 滚动鼠标 */
+.cursor{
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 100;
+    text-align: center;
+}
+.cursor>img{
+    animation: cursor 2s linear infinite;
+}
+.cursor>p{
+    padding-top: 15px;
+    color: #fff;
+    font-size: 12px;
+}
+@-webkit-keyframes cursor{
+    0%{transform: translateY(15px);opacity:0;}
+    100%{transform: translateY(0);opacity: 1}
+}
+/* 动态导航栏 */
+#nav{
+    width: 100%;
+    height: 50px;
+    background-image: url(../img/index/nav2_bg.jpg);
+}
+.navfixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:999;
+}
+.nav-limit{
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+.nav-limit>.nav-self{
+    float: left;
+    width: 132px;
+    height: 50px;
+    background: url(../img/index/self_logo.png) no-repeat center;
+}
+.nav-limit>.nav-info{
+    width: 73%;
+    margin-left: 14%;
+}
+.nav-limit>.nav-info>li{
+    float: left;
+    width: 104px;
+    height: 50px;
+    padding-right: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.nav-limit>.nav-info>li.nactive{
+    color: #99164a;
+    font-weight: bold;
+    font-size: 16px;
+}
+.nav-limit>.limove{
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+}
+/* 预约试驾 */
+.nav-limit .nav-r{
+    position: absolute;
+    top: 0;
+    right: -145px;
+    width: 145px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.nav-limit .nav-r>img{
+    padding: 0 20px 5px 0;
+}
+/* 第二区 */
+#outer,#space,#bling,#peizhi,#news,#consult{
+    position: relative;
+    width: 100%;
+}
+/* 背景 */
+.outer-bg{
+    height: 100%;
+}
+.outer-bg>img{
+    width: 100%;
+}
+/* 切换汽车图片 */
+.outer-car{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.outer-car>div{
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    width: 100%;
+    opacity: 0;
+}
+.outer-car>div:first-child{
+    left: 0;
+    opacity: 1;
+}
+.outer-car>div>img{
+    width: 100%;
+}
+/* 切换按钮列表 */
+#outer>.outer-btn{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-left: -213px;
+    width: 426px;
+}
+.outer-btn>ul>li{
+    float: left;
+    width: 71px;
+    cursor: pointer;
+}
+.outer-btn>ul>li>p{
+    text-align: center;
+    color: #5e5e5e;
+    margin-top: 10px;
+}
+.outer-btn>ul>li>span{
+    display: block;
+    width: 71px;
+    height: 4px;
+    margin: 4px;
+}
+.outer-btn>ul>li:nth-child(1)>span{
+    background-image: url(../img/index/color2.png);
+}
+.outer-btn>ul>li:nth-child(2)>span{
+    background-image: url(../img/index/color1.png);
+}
+.outer-btn>ul>li:nth-child(3)>span{
+    background-image: url(../img/index/color3.png);
+}
+.outer-btn>ul>li:nth-child(4)>span{
+    background-image: url(../img/index/color4.png);
+}
+.outer-btn>ul>li:nth-child(5)>span{
+    background-image: url(../img/index/color5.png);
+}
+.outer-btn>ul>li:nth-child(6)>span{
+    background-image: url(../img/index/color6.png);
+}
+.outer-btn>ul>li>p.oactive{
+    color: #fff;
+}
+/*第三区澎拜动力*/
+#flie{
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/index/bg.png);
+}
+/*三区汽车图*/
+.power .power-car{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+/*三区车轮胎*/
+.power .power-car img:first-child{
+    position: relative;
+}
+.power .power-car .lt-left{
+    position: absolute;
+    bottom: 147px;
+    left: 633px;
+}
+.power .power-car .lt-right{
+    position: absolute;
+    bottom: 147px;
+    right: 580px;
+}
+.power .power-car .ltAddAnimate{
+    transform-origin: 50% 50%;
+    transform: rotate(-6600deg);
+    transition: all 2s linear;
+}
+/*三区启动按钮*/
+.power .power-start{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.power .power-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -122px;
+    margin-top: -100px;
+    animation: carfff 4.5s linear infinite;
+}
+.power-start .power-s:hover{
+    cursor: pointer;
+}
+@keyframes carfff {
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+}
+.power .power-start .power-s{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -130px;
+    margin-top: -107px;
+    width: 215px;
+    height: 215px;
+    background-image: url(../img/index/0.png);
+}
+/*澎拜动力标题*/
+.car-title{
+    position: absolute;
+    top: 10%;
+    left:7%;
+    font-size: 28px;
+    color: #fff;
+    z-index:25;
+}
+.car-title>.small{
+    display: block;
+    font-size: 16px;
+}
+/*三区运动后*/
+.power-con{
+    /*z-index: 50;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.power-con .power-item{
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+}
+.power-item .img1{
+    width: 100%;
+    margin-left: -950px;
+}
+.power-item .power-right{
+    width: 68%;
+    padding-top: 18%;
+    margin-left: 950px;
+}
+.power-item .power-right>.img2{
+    width: 100%;
+    padding-bottom: 25px;
+}
+.power-item .power-right>p.p1{
+    line-height: 24px;
+    padding: 15px 0;
+}
+.power-right>p.p2{
+    font-size: 48px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+}
+.power-right>p.p2 em{
+    font-size: 31%;
+}
+.power-right>p.p2 span{
+    position: relative;
+}
+.power-right>p.p2 span em.text-up{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+.power-item .power-btn{
+    width: 296px;
+    background-image: url(../img/index/21turbo1.jpg);
+    text-align: center;
+}
+.power-item .power-btn>a{
+    color: #fff;
+}
+
+/*第四区宽享空间*/
+#space>img{
+    width: 100%;
+}
+/*四区车身*/
+.space-car,.space-img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -496px;
+    margin-top: -193px;
+    width: 993px;
+    height: 387px;
+}
+.space-img{
+    width: 820px;
+    height: 100%;
+    background-image: url(../img/index/space_car.png);
+}
+.space-car .movecar{
+    margin: 0 auto;
+}
+.space-car .movecar .movebg{
+    position: absolute;
+    left: 820px;
+    top: 50%;
+    margin-top: -184px;
+    margin-left: -50px;
+    z-index: 100;
+    cursor: pointer;
+}
+/*四区车选项按钮*/
+.space-btn{
+    position: absolute;
+    left: 50%;
+    margin-left: -220px;
+    width: 440px;
+    font-size: 20px;
+    text-align: center;
+    background-image:url('../img/index/4a_tab1.png')
+}
+.space-btn>a{
+    float: left;
+    width: 50%;
+    color: #fff;
+    line-height: 40px;
+
+}
+#space .space-bg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+}
+/*四区详情页*/
+#space .space-show{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -320px;
+    margin-left: -484px;
+    z-index:100;
+}
+.space-show .show-img{
+    border: 1px solid #dedede;
+}
+.space-show .show-img>img{
+    height: 430px;
+}
+/*按钮*/
+.space-show .show-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.space-show .show-btn li{
+    position: relative;
+    padding-right: 30px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.space-show .show-btn li>img.space-list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.space-show .show-btn li>img.space-listActive{
+    opacity: 1;
+    animation: spaceListRotate 1.5s linear infinite;
+}
+@keyframes spaceListRotate {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+/*五区车型亮点*/
+.bling-btn{
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.bling-btn li{
+    width: 33%;
+    text-align: center;
+    cursor: pointer;
+}
+.bling-btn li a{
+    position: relative
+}
+.bling-btn li img{
+    width: 100%;
+}
+.bling-btn li>a p{
+    position: absolute;
+    top: 0;
+    left: 26%;
+    line-height: 100%;
+    text-align: center;
+    padding: 5px 15px;
+    background-color: rgba(0,0,0,.7);
+    font-size: 24px;
+    padding-bottom: 8px; color:#fff;
+}
+.bling-btn li>a p:hover{
+    background-color: rgba(0,20,0,.8);
+}
+.bling-btn .bling-btn-center{
+    margin: 0 50px;
+}
+/*六区车型配置*/
+.peizhi-con .peizhi-tit{
+    font-size: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+/*六区详情展示*/
+.bling-show{
+    position: absolute;
+    top: 47%;
+    left: 20%;
+    width: 60%;
+    height: 41%;
+    border: 1px solid #F10180;
+    background-color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.6);
+    text-align: center;
+    overflow: hidden;
+}
+/*六区详情展示文字*/
+.bling-show-title{
+    padding-bottom: 35px;
+}
+.bling-show-title>h3{
+    color: #fff;
+}
+/*六区详情展示无缝滚动*/
+.bling-show>ul{
+    overflow: hidden;
+    width: 2412px;
+}
+.bling-show ul:nth-child(3){
+    position:absolute;
+    top:233px;
+    left:2412px;
+}
+.bling-show>ul li{
+    float: left;
+    margin-right: 5px;
+}
+/*按钮弹出框*/
+.carBtnClick{
+    overflow: inherit;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -280px;
+    margin-top: -280px;
+    width: 560px;
+    height: 530px;
+    border: 1px solid #F10180;
+    z-index: 300;
+    background-color: rgba(0,0,0,.8);
+}
+.carBtnClick>h3{
+    color: #fff;
+    font-size: 30px;
+}
+.carBtnClick>p{
+    color: #fff;
+    line-height: 24px;
+}
+.carBtnClick>img{padding: 6px}
+.carBtnClick>.close{
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/index/close.png);
+}
+/*七区车型配置*/
+.peizhiLi-bg{
+    background-image: url(../img/index/peizhi_listbg.png);
+    background-size: 104% 102%;
+}
+.peizhi-con p{
+    font-size: 40px;
+}
+.peizhi-con .peizhi-txt{
+    font-size: 18px;
+    line-height: 190%;
+    padding: 15px 0;
+}
+.peizhi-btn{
+    padding-bottom: 15px;
+}
+.peizhi-btn>a.peizhi-btn-l{
+    color: #fff;
+    background: #dc0455;
+    font-size: 16px;
+    padding: 13px 35px;
+    vertical-align: super;
+}
+.peizhi-btn>a.peizhi-btn-r{
+    display: inline-block;
+    color: #dc0455;
+    background: #fff;
+    font-size: 14px;
+    padding: 5px;
+    width: 44px;
+    height: 41px;
+}
+/*信贷计算器*/
+#peizhi .xindai{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid red;
+    background: #dc0455;
+}
+.xindai:hover,.peizhi-btn>a.peizhi-btn-l:hover{
+    box-shadow: 0 0 7px #f0f;
+}
+#peizhi .xindai>a{
+    color: #fff;
+}
+/*最新资讯*/
+.news-box{
+    position: absolute;
+    left: 20%;
+    top: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: 70%;
+}
+.news-box .news-clo{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+}
+.news-box .news-clo li{
+    height: 85%;
+    background-image: url(../img/index/news_bg.jpg);
+    overflow: hidden;
+}
+.news-box .news-clo li:hover{
+    box-shadow: 0 0 2px greenyellow;
+    border: 1px solid #dc0455;
+}
+.news-box .news-clo li>img{
+    width: 45%;
+    vertical-align:top;
+    transition: all .5s linear;
+}
+.news-box .news-clo li>img:hover{
+    transform: scale(1.1);
+}
+.news-box .news-clo li>a{
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 47%;
+    height: 50%;
+    padding: 7% 3%;
+}
+.news-box .news-clo li>a>h4{
+    font-size: 20px;
+    line-height: 26px;
+}
+.news-box .news-clo li>a>p{
+    padding-top: 21%;
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 2rem;
+}
+/*地图展示*/
+#map{
+    height: 370px;
+    background-image: url(../img/index/map.png);
+}
+/*第八区经销商资讯*/
+.consult-cont{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: #e9e9e9;
+}
+.map{opacity: 0}
+/*右边固定导航栏*/
+.right-flex{
+    position: fixed;
+    bottom: 15%;
+    right: 10px;
+    z-index: 300;
+}
+.right-flex>ul>li{
+    position: relative;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.right-flex>ul>li>p{
+    position: absolute;
+    top: 0;
+    right: -143px;
+    width: 85px;
+    line-height: 41px;
+    text-align: right;
+    color: #fff;
+}
+/*视频展示*/
+.carBtnVideo{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -230px;
+    z-index: 500;
+}
+/*信贷计算器*/
+.cti-conter-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -224px;
+    margin-left: -250px;
+    background: #fcfbfc;
+    border-top: 10px solid #F10180;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.03);
+    width:500px;
+    z-index: 500;
+}
+.cti-conter-container table {
+    width: 100%;
+    height: 98%;
+    margin-top: 20px;
+}
+.cti-conter-container table tr td {
+    padding: 1%;
+    font-size: 14px;
+}
+.cti-conter-container table tr td:first-child{
+    width: 22%;
+    border-right: 1px solid #8b673a;
+}
+.cti-conter-container p {
+    color: red;
+}
+.cti-conter-container .ctibtn{
+    width: 120px;
+    height: 30px;
+    background: #F10180;
+    color: #fff;
+    margin-left: 22%;
+    margin-bottom: 3%;
+}
+/*幕布*/
+.mubu{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index:200;
+}

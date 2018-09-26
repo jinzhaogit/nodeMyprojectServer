@@ -1,0 +1,647 @@
+/*导航栏**************************************/
+.top-menu {
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -500px;
+}
+.top-menu-logo-left {
+    padding-top: 15px;
+}
+.cti-top-menu-second {
+    position: fixed;
+    height: 50px;
+    top: 0px;
+    width: 100%;
+    background: #2c2c2c;
+    z-index: 9997;
+    color: #d5d5d5;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+.cti-top-menu-wrap {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    line-height: 47px;
+}
+.cti-top-menu-wrap dl dt,
+.cti-top-menu-wrap dl dd {
+    float: left;
+    margin: 0% 2%;
+    text-align: center;
+}
+.cti-top-menu-wrap dl img {
+    display: inline;
+    vertical-align: middle;
+}
+.cti-top-menu-wrap dl a {
+    color: #d5d5d5;
+    display: block;
+}
+.cti-top-menu-wrap dl dd a span {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 0%;
+    margin: auto;
+    left: 0%;
+    background: transparent;
+    height: 3px;
+}
+.cti-top-menu-wrap dl .d-active a span,
+.cti-top-menu-wrap dl dd:hover a span {
+    position: relative;
+    display: block;
+    background: #d9a44d;
+    width: 130%;
+    left: -15%;
+}
+.cti-top-menu-testdrive {
+    background: #D9A44D url("./images/more_icon.png") no-repeat scroll 78% 57%;
+    border-bottom: 3px solid #a56f16;
+    border-top: 2px solid #e6c48b;
+    line-height: 45px;
+    padding: 0% 6%;
+    cursor: pointer;
+}
+.cti-top-menu-wrap .cti-top-menu-testdrive a {
+    display: block;
+    position: relative;
+    left: -22%;
+    color: #403624;
+}
+/*kv********************************************-*/
+.cti-index-kv-img {
+    position: relative;
+    top: 50px;
+}
+/*-- 浮窗
+------------------------------------------------------------------*/
+.d-slide-1-widget {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: absolute;
+    background: url(./images/page1/widget1.png) no-repeat;
+    width: 200px;
+    right: 13%;
+    top: 50%;
+    color: #fff;
+    margin-top: -234px;
+    opacity: 1;
+}
+.d-slide-1-widget-price {
+    height: 83px;
+    overflow: hidden;
+    padding: 20px 10px 15px 17px;
+}
+.d-slide-1-widget-price>span {
+    font-size: 16px;
+    color: #fff;
+}
+.d-slide-1-widget-price>h1 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: 'Microsoft Yahei';
+    margin-top: 5px;
+}
+.d-slide-1-widget-price>h1>span {
+    font-size: 14px;
+}
+.d-slide-1-link {
+    font-size: 14px;
+}
+.d-slide-1-link>div {
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    color: #DDD;
+    font-size: 15px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-repeat: 0px 0px;
+}
+.d-slide-1-link>div>span {
+    padding-left: 20px;
+}
+.d-slide-1-link .d-slide-1-link-1:hover,
+.d-slide-1-link .d-slide-1-link-2:hover,
+.d-slide-1-link .d-slide-1-link-3:hover,
+.d-slide-1-link .d-slide-1-link-4:hover,
+.d-slide-1-link .d-slide-1-link-5:hover {
+    color: #FFF !important;
+    background: #dba54e url(./images/page1/light.png) 120px center no-repeat;
+    background-size: 29%;
+}
+.d-slide-1-video {
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.d-slide-1-video-bg {
+    -webkit-transition: all 750ms;
+    -moz-transition: all 750ms;
+}
+.d-slide-1-video-masking {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 750ms;
+    -moz-transition: all 750ms;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.d-slide-1-video-button {
+    position: absolute;
+    width: 87px;
+    height: 87px;
+    top: -13.5px;
+    left: 56.5px;
+    cursor: pointer;
+    -webkit-transition: all 750ms;
+    -moz-transition: all 750ms;
+}
+.d-slide-1-video:hover .d-slide-1-video-button {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+}
+.d-slide-1-video:hover .d-slide-1-video-bg {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+.d-slide-1-video:hover .d-slide-1-video-masking {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 最右侧导航
+---------------------------------------------------------------*/
+.cti-right-fixed-nav {
+    position: fixed;
+    right: 0px;
+    top: 45%;
+    z-index: 9999;
+}
+.cti-right-fixed-nav ul li {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #8b673a;
+    background: rgba(139, 103, 58, 0.8);
+    margin-bottom: 1px;
+    padding: 6px;
+    border-right: 5px solid transparent;
+    cursor: pointer;
+    padding-right: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+.cti-right-fixed-nav ul li:hover,
+.cti-right-fixed-nav ul li.d-active {
+    background: #da9848;
+    border-right: 5px solid #8b673a;
+    color: #333;
+}
+.cti-right-fixed-nav ul li span {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    visibility: hidden\9;
+    float: left;
+    top: 8px;
+    height: 1px;
+    width: 12px;
+    margin-right: 8px;
+    margin-left: 4px;
+    background: #805a2b;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    cursor: pointer;
+}
+.cti-right-fixed-nav ul li:hover span {
+    width: 12px;
+    visibility: visible\9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+/*page2
+--------------------------------------------------------------*/
+.cti-colour-wrap {
+    background: url('./img/greiz/bg2.jpg') no-repeat center bottom;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 14%;
+}
+/*按钮*/
+.cti-colour-toggle-btn {
+    margin-top: 7%;
+    margin-bottom: 1%;
+}
+.cti-colour-toggle-btn ul {
+    position: relative;
+    float: left;
+    left: 50%;
+    width: 38%;
+}
+.cti-colour-toggle-btn ul li {
+    position: relative;
+    float: left;
+    right: 50%;
+    width: 16%;
+    text-align: center;
+    cursor: pointer;
+}
+.cti-colour-toggle-btn ul li img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    padding: 8%;
+    width: 65%;
+    margin: auto;
+    border-radius: 100%;
+}
+.cti-colour-toggle-btn ul li:hover img,
+.cti-colour-toggle-btn ul li.d-active img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    border: 1px solid #ccc;
+}
+.cti-colour-toggle-btn ul li span {
+    display: block;
+    margin: 16%;
+}
+.cti-colour-toggle-btn ul li label {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    position: relative;
+    padding-top: 30%;
+    opacity: 0;
+    top: -15%;
+    width: 200%;
+    left: -50%;
+    visibility: hidden\9;
+}
+.cti-colour-toggle-btn ul li:hover label,
+.cti-colour-toggle-btn ul li.d-active label {
+    opacity: 1;
+    visibility: visible\9;
+    top: 0%;
+}
+.cti-colour-toggle-btn ul .cti-coulour-red label {
+    color: #d64848;
+}
+.cti-colour-toggle-btn ul .cti-coulour-white label {
+    color: #6b6b6b;
+}
+.cti-colour-toggle-btn ul .cti-coulour-goldsilver label {
+    color: #a47c5f;
+}
+.cti-colour-toggle-btn ul .cti-coulour-brightsilver label {
+    color: #7b858b;
+}
+.cti-colour-toggle-btn ul .cti-coulour-purple label {
+    color: #3d6b9f;
+}
+.cti-colour-toggle-btn ul .cti-coulour-black label {
+    color: #313131;
+}
+.cti-colour-car-list {
+    display: none;
+}
+/*车*/
+.cti-colour-car-img {
+    padding: 2% 0px 5%;
+    width: 56.5%;
+    margin: auto;
+    position: relative;
+}
+.cti-colour-car-img img {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    display: none;
+    z-index: 0;
+    opacity: 0;
+}
+.cti-colour-car-img img:first-child {
+    display: block;
+}
+/*显示隐藏*/
+.cti-colour-car-img.d-active img {
+    position: absolute;
+    display: block;
+}
+.cti-colour-car-img img.d-show {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 10;
+    opacity: 1;
+}
+/*亮点
+------------------------------------------------------*/
+.cti-lightspot-wrap {
+    position: relative;
+}
+.cti-lightspot-item {
+    position: relative;
+    width: 20%;
+    float: left;
+}
+.cti-lightspot-mask {
+    transition: all 0.5s ease;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.cti-lightspot-mask:hover {
+    background: transparent;
+}
+.cti-linghtspot-drop-down {
+    transition: all 0.3s ease;
+    border-top: 5px solid #c2965e;
+    width: 40%;
+    position: relative;
+    top: 72%;
+    overflow: hidden;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden\9;
+}
+.cti-linghtspot-drop-down img {
+    transition: all 0.3s ease;
+    position: relative;
+    top: -40px;
+}
+.cti-lightspot-mask h3 {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 5% 0%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background: #b17d3c;
+    filter: alpha(opacity=80);
+    background: rgba(177, 125, 60, 0.8);
+}
+.cti-lightspot-mask:hover h3 {
+    background: rgba(177, 125, 60, 1);
+}
+.cti-lightspot-mask:hover .cti-linghtspot-drop-down {
+    opacity: 1;
+    visibility: visible\9;
+}
+.cti-lightspot-mask:hover .cti-linghtspot-drop-down img {
+    top: 0px;
+}
+/*配置表
+------------------------------------------------------*/
+.cti-config-counter {
+    padding: 5% auto;
+    margin: auto;
+    text-align: center;
+}
+.cti-config-counter h1 {
+    font-size: 24px;
+    margin: 1% 0px;
+}
+.cti-config-counter-btn {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: url('./images/page4/credit_btn.jpg') repeat-x;
+    border: 0px;
+    width: 30%;
+    width: 350px;
+    font-size: 25px;
+    color: #3b2d15;
+    line-height: 70px;
+    height: 70px;
+    padding: 0px;
+    margin: auto;
+    cursor: pointer;
+}
+.cti-config-counter-btn:hover {
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+.cti-config-counter-btn img {
+    display: inline;
+    position: relative;
+    top: -2px;
+}
+/* 新闻部分
+------------------------------------------------------*/
+.cti-news-wrap {
+    position: relative;
+    width: 100%;
+}
+.cti-news-head {
+    max-width: 1000px;
+    width: 94%;
+    margin: auto;
+}
+.cti-news-title {
+    padding: 4% 0%;
+}
+.cti-news-title h1 {
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.cti-news-title h6 {
+    color: #828183;
+    font-size: 12px;
+}
+.cti-news-tab a {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    padding: 1% 1.2%;
+    color: #414141;
+    font-size: 16px;
+    margin-right: 0.5%;
+}
+.cti-news-tab a:hover {
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.cti-news-tab a.d-active {
+    background: #d9a44d;
+}
+/*新闻列表*/
+.cti-news-list {
+    max-width: 1170px;
+    margin: auto;
+    padding: 3% 0%;
+}
+.cti-news-item {
+    position: relative;
+    width: 31.3%;
+    margin: 1%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cti-news-item img {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    display: block;
+}
+.cti-news-item:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.cti-news-item .cti-news-mask {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: transparent url('./images/alpha_1px.png');
+}
+.cti-news-item .cti-news-mask:hover {
+    background: #7b623a;
+    filter: alpha(opacity=80);
+    background: rgba(123, 98, 58, 0.8);
+}
+.cti-news-mask-ctn {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cti-news-item .cti-news-mask label {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: absolute;
+    padding: 3% 0px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    color: #fff;
+    background: #392a16;
+    filter: alpha(opacity=80);
+    background: rgba(57, 42, 22, 0.8);
+}
+.cti-news-item:hover .cti-news-mask label {
+    filter: alpha(opacity=100);
+    background: rgba(57, 42, 22, 1);
+}
+.cti-news-item .cti-news-mask a {
+    transform: all 0.5s ease;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 3% 6%;
+    position: relative;
+    top: 35%;
+    visibility: hidden\9;
+    transform: scale(0.7);
+    opacity: 0;
+}
+.cti-news-item:hover .cti-news-mask a {
+    visibility: visible\9;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+/* 经销商查询
+------------------------------------------------------*/
+.cti-dealerquery-title {
+    padding: 2% 0%;
+    max-width: 1000px;
+    width: 94%;
+    margin: auto;
+}
+.cti-dealerquery-title h1 {
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.cti-dealerquery-title h6 {
+    color: #828183;
+    font-size: 12px;
+}
+.cti-dealerquery-container {
+    max-width: 1000px;
+    margin: auto;
+    width: 96%;
+    padding-bottom: 3%;
+}
+.cti-dealerquery-container iframe {
+    height: 500px;
+    width: 100%;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.cti-footer-wrap {
+    border-top: 1px solid #c7c7c7;
+}
+.cti-footer-link-ctn {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0.8% 0%;
+    line-height: 30px;
+    color: #646464;
+    width: 94%;
+}
+.cti-footer-link-ctn a {
+    color: #646464;
+    margin-right: 1%;
+}
+.cti-footer-link-ctn a:hover {
+    text-decoration: underline;
+}
+.cti-footer-link-ctn .d-line {
+    margin-right: 0.5%;
+}
+/*回到顶部
+------------------------------------------------------*/
+.cti-btn-gotop {
+    transition: all 0.3s ease;
+    position: fixed;
+    bottom: 2%;
+    right: 10%;
+    opacity: 0.6;
+    z-index: 9998;
+}
+.cti-btn-gotop:hover {
+    transform: rotate(360deg);
+    opacity: 1;
+}
